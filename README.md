@@ -10,6 +10,17 @@ I'm interested in the invisible world of data and how it shapes our lives. I lik
 
 At **StackAI**, I work across AI workflow products and the engineering that makes them dependable: agent experiences, platform and developer tooling, integrations, and product reliability. I care about making complex systems easier to build with, understand, and use.
 
+### Work constellation
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
+  <img src="./assets/activity-light.svg" alt="A work constellation linking JJ to broad StackAI work, Open Voice, Volatile Memory, House Search, and Weather Agent. The surrounding orbit shows weekly contributions; brighter segments mean more activity." width="900">
+</picture>
+
+<sub>One orbit, a year of building. Each segment is a week; brighter segments mean more contributions. [How to read it](./assets/activity-data.json) · [Refresh](https://github.com/startificial/startificial/actions/workflows/refresh-profile.yml)</sub>
+
+
 ### Selected public projects
 
 | Project | What I'm exploring |
@@ -24,15 +35,6 @@ At **StackAI**, I work across AI workflow products and the engineering that make
 **Python · TypeScript · React · SQL**<br>
 AI agents, data engineering, machine learning, and developer experience.
 
-### Activity
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
-  <img src="./assets/activity-light.svg" alt="GitHub activity: monthly contributions and the primary languages of my public, non-fork repositories. Exact values and dates are in the linked activity data." width="900">
-</picture>
-
-<sub>Generated from my public GitHub profile and repositories. [Data & methodology](./assets/activity-data.json) · [Refresh](https://github.com/startificial/startificial/actions/workflows/refresh-profile.yml)</sub>
 
 ---
 
