@@ -10,16 +10,11 @@ I'm interested in the invisible world of data and how it shapes our lives. I lik
 
 At **StackAI**, I work across AI workflow products and the engineering that makes them dependable: agent experiences, platform and developer tooling, integrations, and product reliability. I care about making complex systems easier to build with, understand, and use.
 
-### Work constellation
+### Work overview
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/work-constellation-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/work-constellation-light.svg">
-  <img src="./assets/work-constellation-light.svg" alt="A work constellation linking JJ to broad StackAI work, Open Voice, Volatile Memory, House Search, and Weather Agent. The surrounding orbit shows weekly contributions; brighter segments mean more activity." width="900">
-</picture>
+<img src="./assets/work-console.svg" alt="JJ's work console: a graph of high-level StackAI work and four public projects, plus a green orbit of weekly GitHub contributions. Brighter segments mean more activity." width="900">
 
-<sub>One orbit, a year of building. Each segment is a week; brighter segments mean more contributions. [How to read it](./assets/activity-data.json) · [Refresh](https://github.com/startificial/startificial/actions/workflows/refresh-profile.yml)</sub>
-
+<sub>Public work, mapped. One orbit segment per week; brighter segments mean more contributions. [Data & methodology](./assets/activity-data.json) · [Refresh](https://github.com/startificial/startificial/actions/workflows/refresh-profile.yml)</sub>
 
 ### Selected public projects
 

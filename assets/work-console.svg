@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="622" viewBox="0 0 900 622" role="img" aria-labelledby="title desc">
+<title id="title">JJ — work overview</title>
+<desc id="desc">A work graph with JJ, high-level StackAI themes, and four public projects, styled with dark panels, monospace labels, and green accents. Each segment in the activity orbit represents one week of publicly displayed GitHub contributions; brighter, thicker segments mean more activity. Connections represent shared interests.</desc>
+<rect x=".5" y=".5" width="899" height="621" fill="#090909" stroke="#2b2b29"/>
+<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif">
+<rect x="0.5" y="0.5" width="899" height="49" fill="#090909" stroke="#2b2b29" />
+<rect x="18" y="13" width="24" height="24" fill="#222221" stroke="#30302e" />
+<text x="30" y="29" font-size="9" fill="#dededb" font-weight="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">JJ</text>
+<text x="54" y="25" font-size="13" fill="#dededb" font-weight="550" text-anchor="start">JJ</text>
+<text x="54" y="40" font-size="10" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">startificial</text>
+<path d="M168 15V35" fill="none" stroke="#2b2b29" stroke-width="1" />
+<path d="M188 18H201V31H188Z M192 18V31" fill="none" stroke="#8b8b87" stroke-width="1.2" />
+<text x="211" y="30" font-size="13" fill="#dededb" font-weight="400" text-anchor="start">Work overview</text>
+<circle cx="757" cy="26" r="3" fill="#19c55a"/>
+<text x="770" y="30" font-size="10" fill="#19c55a" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">PUBLIC PROFILE</text>
+<text x="20" y="84" font-size="24" fill="#dededb" font-weight="600" text-anchor="start">Work overview</text>
+<text x="880" y="81" font-size="10" fill="#8b8b87" font-weight="400" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">UPDATED 2026-10-09</text>
+<rect x="20" y="105" width="274" height="88" fill="#111110" stroke="#2b2b29" />
+<text x="36" y="127" font-size="10" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" letter-spacing=".8">PUBLIC REPOSITORIES</text>
+<g transform="translate(36 139) scale(0.675)" fill="#dededb">
+<polygon points="13,7 18,4 18,18 13,15"/>
+<polygon points="13,25 18,22 18,36 13,33"/>
+<polygon points="28,0 40,0 43,3 40,5 28,5 25,3"/>
+<polygon points="38,7 43,4 43,18 38,15"/>
+<polygon points="25,4 30,7 30,15 25,18"/>
+<polygon points="28,17 40,17 43,20 40,22 28,22 25,20"/>
+<polygon points="38,25 43,22 43,36 38,33"/>
+<polygon points="28,35 40,35 43,38 40,40 28,40 25,38"/>
+</g>
+<text x="36" y="181" font-size="10" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Projects and experiments on GitHub</text>
+<path d="M271 119h7v7h-7Z" fill="none" stroke="#8b8b87" stroke-width="0.9" />
+<rect x="313" y="105" width="274" height="88" fill="#111110" stroke="#2b2b29" />
+<text x="329" y="127" font-size="10" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" letter-spacing=".8">FEATURED PROJECTS</text>
+<g transform="translate(329 139) scale(0.675)" fill="#19c55a">
+<polygon points="3,0 15,0 18,3 15,5 3,5 0,3"/>
+<polygon points="13,7 18,4 18,18 13,15"/>
+<polygon points="13,25 18,22 18,36 13,33"/>
+<polygon points="3,35 15,35 18,38 15,40 3,40 0,38"/>
+<polygon points="0,22 5,25 5,33 0,36"/>
+<polygon points="0,4 5,7 5,15 0,18"/>
+<polygon points="25,4 30,7 30,15 25,18"/>
+<polygon points="28,17 40,17 43,20 40,22 28,22 25,20"/>
+<polygon points="38,7 43,4 43,18 38,15"/>
+<polygon points="38,25 43,22 43,36 38,33"/>
+</g>
+<text x="329" y="181" font-size="10" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Voice · memory · automation · agents</text>
+<path d="M564 119h7v7h-7Z" fill="none" stroke="#19c55a" stroke-width="0.9" />
+<rect x="606" y="105" width="274" height="88" fill="#111110" stroke="#2b2b29" />
+<text x="622" y="127" font-size="10" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" letter-spacing=".8">PRIMARY LANGUAGES</text>
+<g transform="translate(622 139) scale(0.675)" fill="#dededb">
+<polygon points="3,0 15,0 18,3 15,5 3,5 0,3"/>
+<polygon points="13,7 18,4 18,18 13,15"/>
+<polygon points="13,25 18,22 18,36 13,33"/>
+<polygon points="3,35 15,35 18,38 15,40 3,40 0,38"/>
+<polygon points="0,22 5,25 5,33 0,36"/>
+<polygon points="0,4 5,7 5,15 0,18"/>
+<polygon points="28,0 40,0 43,3 40,5 28,5 25,3"/>
+<polygon points="38,7 43,4 43,18 38,15"/>
+<polygon points="28,17 40,17 43,20 40,22 28,22 25,20"/>
+<polygon points="25,22 30,25 30,33 25,36"/>
+<polygon points="28,35 40,35 43,38 40,40 28,40 25,38"/>
+</g>
+<text x="622" y="181" font-size="10" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">TypeScript / Python</text>
+<path d="M857 119h7v7h-7Z" fill="none" stroke="#8b8b87" stroke-width="0.9" />
+<rect x="20" y="213" width="552" height="360" fill="#111110" stroke="#2b2b29" />
+<rect x="590" y="213" width="290" height="360" fill="#111110" stroke="#2b2b29" />
+<text x="38" y="240" font-size="16" fill="#dededb" font-weight="500" text-anchor="start">Work graph</text>
+<text x="554" y="239" font-size="9" fill="#8b8b87" font-weight="400" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">SHARED INTERESTS</text>
+<path d="M20 255H572 M590 255H880" fill="none" stroke="#2b2b29" stroke-width="1" />
+<text x="608" y="240" font-size="16" fill="#dededb" font-weight="500" text-anchor="start">Activity orbit</text>
+<circle cx="856" cy="235" r="3" fill="#19c55a"/>
+<path d="M193 384H232V307H278" fill="none" stroke="#19c55a" stroke-width="1.1" opacity=".75"/>
+<path d="M232 384V397H278" fill="none" stroke="#19c55a" stroke-width="1.1" opacity=".75"/>
+<path d="M232 397V487H278" fill="none" stroke="#19c55a" stroke-width="1.1" opacity=".75"/>
+<path d="M232 351H480V367" fill="none" stroke="#19c55a" stroke-width="1.1" opacity=".45"/>
+<path d="M232 441H480V457" fill="none" stroke="#19c55a" stroke-width="1.1" opacity=".45"/>
+<circle cx="232" cy="384" r="2" fill="#19c55a"/>
+<circle cx="232" cy="351" r="2" fill="#19c55a"/>
+<circle cx="232" cy="441" r="2" fill="#19c55a"/>
+<rect x="42" y="348" width="151" height="73" fill="#151513" stroke="#474744" />
+<rect x="54" y="361" width="28" height="28" fill="#242423" stroke="#393937" />
+<text x="68" y="380" font-size="11" fill="#dededb" font-weight="600" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">JJ</text>
+<text x="94" y="378" font-size="18" fill="#dededb" font-weight="600" text-anchor="start">JJ</text>
+<text x="54" y="407" font-size="11" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">@startificial</text>
+<text x="42" y="441" font-size="9" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">BUILDER / EXPLORER</text>
+<rect x="278" y="279" width="276" height="56" fill="#111110" stroke="#2b2b29" />
+<path d="M293 295h11v11h-11Z M298 291V295 M298 306V310" fill="none" stroke="#8b8b87" stroke-width="1.1" />
+<text x="314" y="300" font-size="10" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">STACKAI</text>
+<text x="294" y="320" font-size="13" fill="#dededb" font-weight="400" text-anchor="start">Product · platform · reliability</text>
+<rect x="490" y="289" width="52" height="18" fill="#0c1b11" stroke="#184e2b" rx="9"/>
+<text x="516" y="302" font-size="9" fill="#19c55a" font-weight="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">FOCUS</text>
+<circle cx="278" cy="307" r="2" fill="#19c55a"/>
+<rect x="278" y="367" width="124" height="60" fill="#111110" stroke="#2b2b29" />
+<text x="290" y="386" font-size="9" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">VOICE</text>
+<text x="290" y="410" font-size="12.5" fill="#dededb" font-weight="500" text-anchor="start">Open Voice</text>
+<text x="392" y="386" font-size="9" fill="#19c55a" font-weight="400" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">TS</text>
+<rect x="414" y="367" width="140" height="60" fill="#111110" stroke="#2b2b29" />
+<text x="426" y="386" font-size="9" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">MEMORY</text>
+<text x="426" y="410" font-size="12.5" fill="#dededb" font-weight="500" text-anchor="start">Volatile Memory</text>
+<text x="544" y="386" font-size="9" fill="#19c55a" font-weight="400" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">PY</text>
+<rect x="278" y="457" width="124" height="60" fill="#111110" stroke="#2b2b29" />
+<text x="290" y="476" font-size="9" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">AUTOMATION</text>
+<text x="290" y="500" font-size="12.5" fill="#dededb" font-weight="500" text-anchor="start">House Search</text>
+<text x="392" y="476" font-size="9" fill="#19c55a" font-weight="400" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">PY</text>
+<rect x="414" y="457" width="140" height="60" fill="#111110" stroke="#2b2b29" />
+<text x="426" y="476" font-size="9" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">AGENTS</text>
+<text x="426" y="500" font-size="12.5" fill="#dededb" font-weight="500" text-anchor="start">Weather Agent</text>
+<text x="544" y="476" font-size="9" fill="#19c55a" font-weight="400" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">TS</text>
+<circle cx="278" cy="397" r="2" fill="#19c55a"/>
+<circle cx="278" cy="487" r="2" fill="#19c55a"/>
+<circle cx="480" cy="367" r="2" fill="#19c55a"/>
+<circle cx="480" cy="457" r="2" fill="#19c55a"/>
+<text x="38" y="552" font-size="10" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">AI products / agent systems / practical tools</text>
+<circle cx="735" cy="369" r="77" fill="none" stroke="#2b2b29" stroke-width=".8"/>
+<circle cx="735" cy="369" r="101" fill="none" stroke="#2b2b29" stroke-width=".8"/>
+<path d="M736.27 280.01A89 89 0 0 1743.43 280.40" fill="none" stroke="#19c55a" stroke-width="3.02" opacity="0.44"><title>Week of 2025-10-05: 5 contributions</title></path>
+<path d="M746.78 280.78A89 89 0 0 1753.85 282.02" fill="none" stroke="#19c55a" stroke-width="3.02" opacity="0.44"><title>Week of 2025-10-12: 5 contributions</title></path>
+<path d="M757.13 282.80A89 89 0 0 1764.00 284.86" fill="none" stroke="#19c55a" stroke-width="2.46" opacity="0.34"><title>Week of 2025-10-19: 1 contributions</title></path>
+<path d="M767.17 286.02A89 89 0 0 1773.75 288.88" fill="none" stroke="#19c55a" stroke-width="2.46" opacity="0.34"><title>Week of 2025-10-26: 1 contributions</title></path>
+<path d="M776.76 290.41A89 89 0 0 1782.96 294.02" fill="none" stroke="#19c55a" stroke-width="3.51" opacity="0.53"><title>Week of 2025-11-02: 11 contributions</title></path>
+<path d="M785.76 295.90A89 89 0 0 1791.49 300.22" fill="none" stroke="#19c55a" stroke-width="3.82" opacity="0.59"><title>Week of 2025-11-09: 16 contributions</title></path>
+<path d="M794.05 302.41A89 89 0 0 1799.22 307.39" fill="none" stroke="#30302d" stroke-width="2.00" opacity="1.00"><title>Week of 2025-11-16: 0 contributions</title></path>
+<path d="M801.52 309.87A89 89 0 0 1806.06 315.42" fill="none" stroke="#30302d" stroke-width="2.00" opacity="1.00"><title>Week of 2025-11-23: 0 contributions</title></path>
+<path d="M808.04 318.15A89 89 0 0 1811.90 324.20" fill="none" stroke="#30302d" stroke-width="2.00" opacity="1.00"><title>Week of 2025-11-30: 0 contributions</title></path>
+<path d="M813.54 327.14A89 89 0 0 1816.66 333.61" fill="none" stroke="#19c55a" stroke-width="3.12" opacity="0.46"><title>Week of 2025-12-07: 6 contributions</title></path>
+<path d="M817.94 336.73A89 89 0 0 1820.27 343.51" fill="none" stroke="#30302d" stroke-width="2.00" opacity="1.00"><title>Week of 2025-12-14: 0 contributions</title></path>
+<path d="M821.18 346.76A89 89 0 0 1822.69 353.78" fill="none" stroke="#19c55a" stroke-width="2.79" opacity="0.40"><title>Week of 2025-12-21: 3 contributions</title></path>
+<path d="M823.20 357.11A89 89 0 0 1823.87 364.25" fill="none" stroke="#19c55a" stroke-width="4.28" opacity="0.68"><title>Week of 2025-12-28: 25 contributions</title></path>
+<path d="M823.99 367.63A89 89 0 0 1823.81 374.80" fill="none" stroke="#30302d" stroke-width="2.00" opacity="1.00"><title>Week of 2026-01-04: 0 contributions</title></path>
+<path d="M823.53 378.16A89 89 0 0 1822.50 385.26" fill="none" stroke="#19c55a" stroke-width="2.91" opacity="0.42"><title>Week of 2026-01-11: 4 contributions</title></path>
+<path d="M821.82 388.57A89 89 0 0 1819.96 395.50" fill="none" stroke="#30302d" stroke-width="2.00" opacity="1.00"><title>Week of 2026-01-18: 0 contributions</title></path>
+<path d="M818.90 398.70A89 89 0 0 1816.23 405.36" fill="none" stroke="#19c55a" stroke-width="3.12" opacity="0.46"><title>Week of 2026-01-25: 6 contributions</title></path>
+<path d="M814.80 408.41A89 89 0 0 1811.36 414.71" fill="none" stroke="#30302d" stroke-width="2.00" opacity="1.00"><title>Week of 2026-02-01: 0 contributions</title></path>
+<path d="M809.57 417.58A89 89 0 0 1805.42 423.42" fill="none" stroke="#19c55a" stroke-width="2.46" opacity="0.34"><title>Week of 2026-02-08: 1 contributions</title></path>
+<path d="M803.31 426.06A89 89 0 0 1798.49 431.37" fill="none" stroke="#19c55a" stroke-width="2.79" opacity="0.40"><title>Week of 2026-02-15: 3 contributions</title></path>
+<path d="M796.08 433.73A89 89 0 0 1790.67 438.44" fill="none" stroke="#19c55a" stroke-width="2.46" opacity="0.34"><title>Week of 2026-02-22: 1 contributions</title></path>
+<path d="M787.99 440.50A89 89 0 0 1782.06 444.54" fill="none" stroke="#19c55a" stroke-width="2.91" opacity="0.42"><title>Week of 2026-03-01: 4 contributions</title></path>
+<path d="M779.16 446.27A89 89 0 0 1772.80 449.57" fill="none" stroke="#19c55a" stroke-width="3.77" opacity="0.58"><title>Week of 2026-03-08: 15 contributions</title></path>
+<path d="M769.72 450.95A89 89 0 0 1763.00 453.48" fill="none" stroke="#19c55a" stroke-width="3.29" opacity="0.49"><title>Week of 2026-03-15: 8 contributions</title></path>
+<path d="M759.78 454.48A89 89 0 0 1752.82 456.20" fill="none" stroke="#19c55a" stroke-width="4.09" opacity="0.64"><title>Week of 2026-03-22: 21 contributions</title></path>
+<path d="M749.50 456.81A89 89 0 0 1742.38 457.69" fill="none" stroke="#19c55a" stroke-width="4.04" opacity="0.63"><title>Week of 2026-03-29: 20 contributions</title></path>
+<path d="M739.01 457.91A89 89 0 0 1731.84 457.94" fill="none" stroke="#19c55a" stroke-width="3.21" opacity="0.48"><title>Week of 2026-04-05: 7 contributions</title></path>
+<path d="M728.46 457.76A89 89 0 0 1721.34 456.95" fill="none" stroke="#19c55a" stroke-width="3.37" opacity="0.51"><title>Week of 2026-04-12: 9 contributions</title></path>
+<path d="M718.01 456.36A89 89 0 0 1711.03 454.71" fill="none" stroke="#19c55a" stroke-width="2.46" opacity="0.34"><title>Week of 2026-04-19: 1 contributions</title></path>
+<path d="M707.80 453.74A89 89 0 0 1701.06 451.28" fill="none" stroke="#19c55a" stroke-width="4.23" opacity="0.67"><title>Week of 2026-04-26: 24 contributions</title></path>
+<path d="M697.97 449.93A89 89 0 0 1691.57 446.68" fill="none" stroke="#19c55a" stroke-width="3.82" opacity="0.59"><title>Week of 2026-05-03: 16 contributions</title></path>
+<path d="M688.66 444.98A89 89 0 0 1682.69 441.00" fill="none" stroke="#19c55a" stroke-width="3.51" opacity="0.53"><title>Week of 2026-05-10: 11 contributions</title></path>
+<path d="M679.99 438.97A89 89 0 0 1674.54 434.31" fill="none" stroke="#19c55a" stroke-width="2.79" opacity="0.40"><title>Week of 2026-05-17: 3 contributions</title></path>
+<path d="M672.10 431.97A89 89 0 0 1667.24 426.70" fill="none" stroke="#30302d" stroke-width="2.00" opacity="1.00"><title>Week of 2026-05-24: 0 contributions</title></path>
+<path d="M665.10 424.09A89 89 0 0 1660.89 418.28" fill="none" stroke="#30302d" stroke-width="2.00" opacity="1.00"><title>Week of 2026-05-31: 0 contributions</title></path>
+<path d="M659.07 415.43A89 89 0 0 1655.58 409.17" fill="none" stroke="#30302d" stroke-width="2.00" opacity="1.00"><title>Week of 2026-06-07: 0 contributions</title></path>
+<path d="M654.11 406.13A89 89 0 0 1651.39 399.49" fill="none" stroke="#30302d" stroke-width="2.00" opacity="1.00"><title>Week of 2026-06-14: 0 contributions</title></path>
+<path d="M650.29 396.30A89 89 0 0 1648.37 389.39" fill="none" stroke="#19c55a" stroke-width="3.02" opacity="0.44"><title>Week of 2026-06-21: 5 contributions</title></path>
+<path d="M647.66 386.09A89 89 0 0 1646.56 379.00" fill="none" stroke="#19c55a" stroke-width="4.09" opacity="0.64"><title>Week of 2026-06-28: 21 contributions</title></path>
+<path d="M646.25 375.64A89 89 0 0 1646.00 368.47" fill="none" stroke="#19c55a" stroke-width="3.88" opacity="0.60"><title>Week of 2026-07-05: 17 contributions</title></path>
+<path d="M646.09 365.10A89 89 0 0 1646.69 357.95" fill="none" stroke="#19c55a" stroke-width="3.82" opacity="0.59"><title>Week of 2026-07-12: 16 contributions</title></path>
+<path d="M647.17 354.61A89 89 0 0 1648.62 347.58" fill="none" stroke="#19c55a" stroke-width="3.82" opacity="0.59"><title>Week of 2026-07-19: 16 contributions</title></path>
+<path d="M649.49 344.32A89 89 0 0 1651.75 337.52" fill="none" stroke="#19c55a" stroke-width="2.79" opacity="0.40"><title>Week of 2026-07-26: 3 contributions</title></path>
+<path d="M653.01 334.38A89 89 0 0 1656.06 327.89" fill="none" stroke="#19c55a" stroke-width="4.04" opacity="0.63"><title>Week of 2026-08-02: 20 contributions</title></path>
+<path d="M657.68 324.93A89 89 0 0 1661.48 318.84" fill="none" stroke="#19c55a" stroke-width="5.13" opacity="0.84"><title>Week of 2026-08-09: 47 contributions</title></path>
+<path d="M663.43 316.09A89 89 0 0 1667.93 310.50" fill="none" stroke="#19c55a" stroke-width="4.04" opacity="0.63"><title>Week of 2026-08-16: 20 contributions</title></path>
+<path d="M670.19 308.00A89 89 0 0 1675.32 302.98" fill="none" stroke="#19c55a" stroke-width="4.41" opacity="0.70"><title>Week of 2026-08-23: 28 contributions</title></path>
+<path d="M677.86 300.76A89 89 0 0 1683.54 296.38" fill="none" stroke="#19c55a" stroke-width="5.47" opacity="0.90"><title>Week of 2026-08-30: 58 contributions</title></path>
+<path d="M686.34 294.48A89 89 0 0 1692.49 290.81" fill="none" stroke="#19c55a" stroke-width="4.37" opacity="0.69"><title>Week of 2026-09-06: 27 contributions</title></path>
+<path d="M695.49 289.25A89 89 0 0 1702.04 286.33" fill="none" stroke="#19c55a" stroke-width="6.00" opacity="1.00"><title>Week of 2026-09-13: 77 contributions</title></path>
+<path d="M705.20 285.14A89 89 0 0 1712.05 283.01" fill="none" stroke="#19c55a" stroke-width="5.53" opacity="0.91"><title>Week of 2026-09-20: 60 contributions</title></path>
+<path d="M715.33 282.20A89 89 0 0 1722.38 280.90" fill="none" stroke="#19c55a" stroke-width="5.35" opacity="0.88"><title>Week of 2026-09-27: 54 contributions</title></path>
+<path d="M725.73 280.48A89 89 0 0 1732.89 280.03" fill="none" stroke="#19c55a" stroke-width="5.13" opacity="0.84"><title>Week of 2026-10-04: 47 contributions</title></path>
+<path d="M842.00 369.00L847.00 369.00" fill="none" stroke="#8b8b87" stroke-width="1" />
+<path d="M735.00 476.00L735.00 481.00" fill="none" stroke="#8b8b87" stroke-width="1" />
+<path d="M628.00 369.00L623.00 369.00" fill="none" stroke="#8b8b87" stroke-width="1" />
+<path d="M735.00 262.00L735.00 257.00" fill="none" stroke="#8b8b87" stroke-width="1" />
+<g transform="translate(706.1 346) scale(0.85)" fill="#dededb">
+<polygon points="3,0 15,0 18,3 15,5 3,5 0,3"/>
+<polygon points="13,7 18,4 18,18 13,15"/>
+<polygon points="13,25 18,22 18,36 13,33"/>
+<polygon points="25,4 30,7 30,15 25,18"/>
+<polygon points="28,17 40,17 43,20 40,22 28,22 25,20"/>
+<polygon points="38,7 43,4 43,18 38,15"/>
+<polygon points="38,25 43,22 43,36 38,33"/>
+<polygon points="53,0 65,0 68,3 65,5 53,5 50,3"/>
+<polygon points="63,7 68,4 68,18 63,15"/>
+<polygon points="53,17 65,17 68,20 65,22 53,22 50,20"/>
+<polygon points="63,25 68,22 68,36 63,33"/>
+<polygon points="53,35 65,35 68,38 65,40 53,40 50,38"/>
+</g>
+<text x="735" y="402" font-size="9" fill="#8b8b87" font-weight="400" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" letter-spacing=".8">CONTRIBUTIONS</text>
+<path d="M608 487H862" fill="none" stroke="#2b2b29" stroke-width="1" />
+<text x="608" y="511" font-size="9" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">WINDOW</text>
+<text x="862" y="511" font-size="10" fill="#dededb" font-weight="400" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">PAST YEAR</text>
+<text x="608" y="536" font-size="9" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">SIGNALS</text>
+<text x="862" y="536" font-size="10" fill="#dededb" font-weight="400" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">53 WEEKS</text>
+<text x="608" y="556" font-size="9" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">SOURCE</text>
+<text x="862" y="556" font-size="9" fill="#dededb" font-weight="400" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">PUBLIC GITHUB PROFILE</text>
+<path d="M20 590H880" fill="none" stroke="#2b2b29" stroke-width="1" />
+<circle cx="25" cy="606" r="2" fill="#19c55a"/>
+<text x="35" y="610" font-size="10" fill="#8b8b87" font-weight="400" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Brighter orbit segments = more contributions that week.</text>
+<text x="880" y="610" font-size="10" fill="#8b8b87" font-weight="400" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">JJ / STARTIFICIAL</text>
+</g>
+</svg>

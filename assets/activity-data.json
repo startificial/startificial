@@ -4,7 +4,7 @@
     "https://github.com/users/startificial/contributions",
     "https://api.github.com/users/startificial/repos"
   ],
-  "methodology": "Counts come from the public profile contribution calendar and include any private contribution counts the profile publicly displays. No private repository names or contents are requested. Monthly bars show the last 12 calendar months; the current month is partial. Languages count GitHub's primary language per public non-fork repository, not bytes, proficiency, or time spent. The work constellation links are thematic, not dependencies. Its activity orbit uses one segment per calendar week; segment brightness and thickness increase with the square root of that week's contribution count relative to the maximum week.",
+  "methodology": "Counts come from the public profile contribution calendar and include any private contribution counts the profile publicly displays. No private repository names or contents are requested. Monthly totals in this data cover the last 12 calendar months; the current month is partial. Languages count GitHub's primary language per public non-fork repository, not bytes, proficiency, or time spent. The work graph links indicate shared interests, not implementation dependencies. Its activity orbit uses one segment per calendar week; segment brightness and thickness increase with the square root of that week's contribution count relative to the maximum week.",
   "calendar_start": "2025-10-05",
   "calendar_end": "2026-10-09",
   "contributions_in_calendar": 743,

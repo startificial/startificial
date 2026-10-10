@@ -71,107 +71,140 @@ def load_repos():
         page += 1
 
 
-def render(data, dark):
+def render(data):
     import math
-    import random
-    p = {"bg": "#101421", "ink": "#f0eee9", "muted": "#9fa9b9", "line": "#374257", "mint": "#8ee4c5", "violet": "#b2a2ff", "gold": "#f1c587", "blue": "#91c9f4", "soft": "#192334"} if dark else {"bg": "#faf8f3", "ink": "#253042", "muted": "#697384", "line": "#cbd0d8", "mint": "#247d69", "violet": "#7162b6", "gold": "#a87225", "blue": "#377dba", "soft": "#eeeae1"}
-    out = [f'<svg xmlns="http://www.w3.org/2000/svg" width="900" height="535" viewBox="0 0 900 535" role="img" aria-labelledby="title desc">', '<title id="title">JJ — a work constellation</title>', '<desc id="desc">A personal work map linking JJ to high-level StackAI work and four public projects. The orbit has one segment for each week of publicly visible GitHub activity; brighter, thicker segments indicate more contributions. Project connections are thematic, not dependencies.</desc>', f'<rect x=".5" y=".5" width="899" height="534" rx="16" fill="{p["bg"]}" stroke="{p["line"]}"/>', '<style>.pulse{animation:breathe 5s ease-in-out infinite}@keyframes breathe{0%,100%{opacity:.25}50%{opacity:.7}}@media(prefers-reduced-motion:reduce){.pulse{animation:none}}</style>', '<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">']
+    p = {'bg':'#090909','panel':'#111110','ink':'#dededb','muted':'#8b8b87','line':'#2b2b29','green':'#19c55a'}
+    out = ['<svg xmlns="http://www.w3.org/2000/svg" width="900" height="622" viewBox="0 0 900 622" role="img" aria-labelledby="title desc">', '<title id="title">JJ — work overview</title>', '<desc id="desc">A work graph with JJ, high-level StackAI themes, and four public projects, styled with dark panels, monospace labels, and green accents. Each segment in the activity orbit represents one week of publicly displayed GitHub contributions; brighter, thicker segments mean more activity. Connections represent shared interests.</desc>', f'<rect x=".5" y=".5" width="899" height="621" fill="{p["bg"]}" stroke="{p["line"]}"/>', '<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif">']
 
-    def txt(x, y, value, size=14, color=None, weight=400, anchor="start", mono=False):
-        font = ' font-family="ui-monospace, SFMono-Regular, Consolas, monospace"' if mono else ''
-        out.append(f'<text x="{x}" y="{y}" font-size="{size}" fill="{color or p["ink"]}" font-weight="{weight}" text-anchor="{anchor}"{font}>{escape(str(value))}</text>')
+    def text(x,y,value,size=14,color=None,weight=400,anchor='start',mono=False,spacing=None):
+        extra = ' font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"' if mono else ''
+        if spacing is not None:
+            extra += f' letter-spacing="{spacing}"'
+        out.append(f'<text x="{x}" y="{y}" font-size="{size}" fill="{color or p["ink"]}" font-weight="{weight}" text-anchor="{anchor}"{extra}>{escape(str(value))}</text>')
 
-    def path(d, color=None, width=1, extra=''):
+    def box(x,y,w,h,fill=None,stroke=None,extra=''):
+        out.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{fill or p["panel"]}" stroke="{stroke or p["line"]}" {extra}/>')
+
+    def line(d,color=None,width=1,extra=''):
         out.append(f'<path d="{d}" fill="none" stroke="{color or p["line"]}" stroke-width="{width}" {extra}/>')
 
-    def circle(x, y, r, fill, stroke=None, extra=''):
-        out.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{fill}" stroke="{stroke or fill}" {extra}/>')
+    def dot(x,y,r=2.5,color=None):
+        out.append(f'<circle cx="{x}" cy="{y}" r="{r}" fill="{color or p["green"]}"/>')
 
-    # Quiet background stars are decorative; only the labelled orbit encodes data.
-    rng = random.Random(17)
-    for _ in range(55):
-        x, y = rng.randrange(35, 866), rng.randrange(118, 472)
-        circle(x, y, rng.choice([.7, 1, 1.2]), p['muted'], extra='opacity=".17"')
-    txt(35, 37, 'JJ / STARTIFICIAL', 11, p['muted'], mono=True)
-    txt(35, 77, 'A map of what I build.', 29, weight=550)
-    txt(35, 103, 'Agents, data, and the systems behind them.', 14, p['muted'])
-    txt(865, 37, 'WORK CONSTELLATION / 01', 10, p['muted'], anchor='end', mono=True)
+    def digital(x,y,value,height=28,color=None):
+        # A vector seven-segment face keeps the counters crisp without remote fonts.
+        shapes = {'a':[(3,0),(15,0),(18,3),(15,5),(3,5),(0,3)], 'g':[(3,17),(15,17),(18,20),(15,22),(3,22),(0,20)], 'd':[(3,35),(15,35),(18,38),(15,40),(3,40),(0,38)], 'f':[(0,4),(5,7),(5,15),(0,18)], 'b':[(13,7),(18,4),(18,18),(13,15)], 'e':[(0,22),(5,25),(5,33),(0,36)], 'c':[(13,25),(18,22),(18,36),(13,33)]}
+        digits = {'0':'abcdef','1':'bc','2':'abged','3':'abgcd','4':'fgbc','5':'afgcd','6':'afgecd','7':'abc','8':'abcdefg','9':'abfgcd'}
+        scale=height/40
+        out.append(f'<g transform="translate({x} {y}) scale({scale})" fill="{color or p["ink"]}">')
+        for i,char in enumerate(str(value)):
+            for segment in digits[char]:
+                points=' '.join(f'{px+i*25},{py}' for px,py in shapes[segment])
+                out.append(f'<polygon points="{points}"/>')
+        out.append('</g>')
 
-    cx, cy = 430, 300
-    circle(cx, cy, 156, 'none', p['line'], 'stroke-dasharray="2 9" opacity=".5"')
-    circle(cx, cy, 130, 'none', p['line'], 'stroke-width=".6" opacity=".5"')
-    path('M324 247 Q290 232 255 200', p['violet'], 1.2)
-    path('M532 246 Q600 210 659 194', p['mint'], 1.2)
-    path('M540 345 Q597 370 659 382', p['blue'], 1.2)
-    path('M330 358 Q271 398 204 407', p['gold'], 1.2)
-    path('M451 413 Q464 440 492 458', p['mint'], 1.2)
-    # Secondary bridges describe shared interests, never internal architecture.
-    path('M255 200 Q358 139 659 194', extra='stroke-dasharray="3 6" opacity=".45"')
-    path('M659 194 Q702 277 659 382', extra='stroke-dasharray="3 6" opacity=".45"')
-    path('M204 407 Q296 469 492 458', extra='stroke-dasharray="3 6" opacity=".45"')
+    # Top bar follows the reference's plain, square-edged application chrome.
+    box(0.5,0.5,899,49,p['bg'])
+    box(18,13,24,24,'#222221','#30302e')
+    text(30,29,'JJ',9,anchor='middle',mono=True)
+    text(54,25,'JJ',13,weight=550)
+    text(54,40,'startificial',10,p['muted'],mono=True)
+    line('M168 15V35')
+    line('M188 18H201V31H188Z M192 18V31',p['muted'],1.2)
+    text(211,30,'Work overview',13)
+    dot(757,26,3)
+    text(770,30,'PUBLIC PROFILE',10,p['green'],mono=True)
+    text(20,84,'Work overview',24,weight=600)
+    text(880,81,f'UPDATED {data["updated"]}',10,p['muted'],anchor='end',mono=True)
 
-    weeks = data['weekly_contributions']
-    maximum = max(1, *(w['count'] for w in weeks))
-    for i, week in enumerate(weeks):
-        a = -math.pi/2 + (i + .09) * math.tau/len(weeks)
-        b = -math.pi/2 + (i + .83) * math.tau/len(weeks)
-        activity = math.sqrt(week['count']/maximum)
-        radius = 106 + activity*10
-        x1,y1 = cx+radius*math.cos(a),cy+radius*math.sin(a)
-        x2,y2 = cx+radius*math.cos(b),cy+radius*math.sin(b)
-        color = p['mint'] if i >= len(weeks)*.73 else p['violet']
-        opacity = .2 + .8*activity
-        d = f'M{x1:.2f} {y1:.2f} A{radius:.2f} {radius:.2f} 0 0 1 {x2:.2f} {y2:.2f}'
-        out.append(f'<path d="{d}" fill="none" stroke="{color}" stroke-width="{2+activity*5:.2f}" opacity="{opacity:.2f}" stroke-linecap="round"><title>Week of {week["start"]}: {week["count"]} contributions</title></path>')
-    circle(cx,cy,78,p['soft'])
-    txt(cx, cy-7, 'JJ', 47, weight=550, anchor='middle')
-    txt(cx, cy+24, 'BUILDER / EXPLORER', 9, p['muted'], anchor='middle', mono=True)
-    txt(cx, cy+49, f'{data["contributions_in_calendar"]:,} contributions', 12, p['mint'], anchor='middle')
-    txt(cx, 163, 'PUBLIC ACTIVITY ORBIT', 9, p['muted'], anchor='middle', mono=True)
+    cards=[(20,'PUBLIC REPOSITORIES',data['public_repository_count'],'Projects and experiments on GitHub'),(313,'FEATURED PROJECTS',4,'Voice · memory · automation · agents'),(606,'PRIMARY LANGUAGES',len(data['primary_languages']),' / '.join(data['primary_languages']))]
+    for x,label,value,caption in cards:
+        box(x,105,274,88)
+        text(x+16,127,label,10,p['muted'],mono=True,spacing='.8')
+        digital(x+16,139,f'{value:02d}',27,p['green'] if label=='FEATURED PROJECTS' else p['ink'])
+        text(x+16,181,caption,10,p['muted'],mono=True)
+        # Small reference-style corner marks are decorative, not state indicators.
+        line(f'M{x+251} 119h7v7h-7Z',p['green'] if label=='FEATURED PROJECTS' else p['muted'],.9)
 
-    # Nodes are entirely custom vector marks, not fetched icons or third-party cards.
-    def node(x,y,color):
-        circle(x,y,23,'none',color,'opacity=".2" class="pulse"')
-        circle(x,y,16,p['bg'],color,'stroke-width="1.2"')
-        circle(x,y,2.5,color)
+    box(20,213,552,360)
+    box(590,213,290,360)
+    text(38,240,'Work graph',16,weight=500)
+    text(554,239,'SHARED INTERESTS',9,p['muted'],anchor='end',mono=True)
+    line('M20 255H572 M590 255H880')
+    text(608,240,'Activity orbit',16,weight=500)
+    dot(856,235,3)
 
-    node(255,200,p['violet'])
-    path('M248 194L262 194L262 206L248 206Z M255 188V194 M255 206V212',p['violet'],1.2)
-    txt(45,173,'STACKAI',10,p['violet'],mono=True)
-    txt(45,197,'AI workflow products',18,weight=550)
-    txt(45,221,'Product · platform · reliability',11,p['muted'])
+    # Orthogonal connectors organize themes, not implementation dependencies.
+    line('M193 384H232V307H278',p['green'],1.1,extra='opacity=".75"')
+    line('M232 384V397H278',p['green'],1.1,extra='opacity=".75"')
+    line('M232 397V487H278',p['green'],1.1,extra='opacity=".75"')
+    line('M232 351H480V367',p['green'],1.1,extra='opacity=".45"')
+    line('M232 441H480V457',p['green'],1.1,extra='opacity=".45"')
+    for x,y in [(232,384),(232,351),(232,441)]:
+        dot(x,y,2)
 
-    node(659,194,p['mint'])
-    path('M647 194H651L654 187L658 201L662 187L665 194H671',p['mint'],1.3)
-    txt(698,171,'VOICE',10,p['mint'],mono=True)
-    txt(698,195,'Open Voice',19,weight=550)
-    txt(698,218,'Voice agent interfaces',12,p['muted'])
+    box(42,348,151,73,'#151513','#474744')
+    box(54,361,28,28,'#242423','#393937')
+    text(68,380,'JJ',11,weight=600,anchor='middle',mono=True)
+    text(94,378,'JJ',18,weight=600)
+    text(54,407,'@startificial',11,p['muted'],mono=True)
+    text(42,441,'BUILDER / EXPLORER',9,p['muted'],mono=True)
 
-    node(659,382,p['blue'])
-    for x,y in [(651,376),(666,374),(665,390)]:
-        circle(x,y,2,p['blue'])
-    path('M651 376L666 374L665 390L651 376',p['blue'],1)
-    txt(698,361,'MEMORY',10,p['blue'],mono=True)
-    txt(698,385,'Volatile Memory',18,weight=550)
-    txt(698,408,'How agents remember',12,p['muted'])
+    box(278,279,276,56)
+    line('M293 295h11v11h-11Z M298 291V295 M298 306V310',p['muted'],1.1)
+    text(314,300,'STACKAI',10,p['muted'],mono=True)
+    text(294,320,'Product · platform · reliability',13)
+    box(490,289,52,18,'#0c1b11','#184e2b',extra='rx="9"')
+    text(516,302,'FOCUS',9,p['green'],anchor='middle',mono=True)
+    dot(278,307,2)
 
-    node(204,407,p['gold'])
-    path('M195 407L204 399L213 407 M198 406V415H210V406',p['gold'],1.2)
-    txt(45,382,'AUTOMATION',10,p['gold'],mono=True)
-    txt(45,406,'House Search',18,weight=550)
-    txt(45,430,'Data → useful action',12,p['muted'])
+    projects=[(278,367,124,'VOICE','Open Voice','TS'),(414,367,140,'MEMORY','Volatile Memory','PY'),(278,457,124,'AUTOMATION','House Search','PY'),(414,457,140,'AGENTS','Weather Agent','TS')]
+    for x,y,w,theme,name,language in projects:
+        box(x,y,w,60)
+        text(x+12,y+19,theme,9,p['muted'],mono=True)
+        text(x+12,y+43,name,12.5,weight=500)
+        text(x+w-10,y+19,language,9,p['green'],anchor='end',mono=True)
+    for x,y in [(278,397),(278,487),(480,367),(480,457)]:
+        dot(x,y,2)
+    text(38,552,'AI products / agent systems / practical tools',10,p['muted'],mono=True)
 
-    node(492,458,p['mint'])
-    path('M481 461H503 M484 456Q484 448 491 451Q499 445 502 455',p['mint'],1.2)
-    txt(533,445,'AGENTS + TOOLS',10,p['mint'],mono=True)
-    txt(533,469,'Weather Agent',18,weight=550)
-    txt(533,489,'Small workflows, real utility',12,p['muted'])
+    cx,cy=735,369
+    weeks=data['weekly_contributions']
+    maximum=max(1,*(w['count'] for w in weeks))
+    for radius in [77,101]:
+        out.append(f'<circle cx="{cx}" cy="{cy}" r="{radius}" fill="none" stroke="{p["line"]}" stroke-width=".8"/>')
+    for i,week in enumerate(weeks):
+        a=-math.pi/2+(i+.12)*math.tau/len(weeks)
+        b=-math.pi/2+(i+.80)*math.tau/len(weeks)
+        activity=math.sqrt(week['count']/maximum)
+        radius=89
+        x1,y1=cx+radius*math.cos(a),cy+radius*math.sin(a)
+        x2,y2=cx+radius*math.cos(b),cy+radius*math.sin(b)
+        color=p['green'] if week['count'] else '#30302d'
+        opacity=.25+.75*activity if week['count'] else 1
+        out.append(f'<path d="M{x1:.2f} {y1:.2f}A89 89 0 0 1{x2:.2f} {y2:.2f}" fill="none" stroke="{color}" stroke-width="{2+activity*4:.2f}" opacity="{opacity:.2f}"><title>Week of {week["start"]}: {week["count"]} contributions</title></path>')
+    for angle in [0,math.pi/2,math.pi,3*math.pi/2]:
+        x1,y1=cx+107*math.cos(angle),cy+107*math.sin(angle)
+        x2,y2=cx+112*math.cos(angle),cy+112*math.sin(angle)
+        line(f'M{x1:.2f} {y1:.2f}L{x2:.2f} {y2:.2f}',p['muted'])
+    value=str(data['contributions_in_calendar'])
+    digital(cx-(len(value)*25-7)*.85/2,346,value,34)
+    text(cx,402,'CONTRIBUTIONS',9,p['muted'],anchor='middle',mono=True,spacing='.8')
+    line('M608 487H862')
+    text(608,511,'WINDOW',9,p['muted'],mono=True)
+    text(862,511,'PAST YEAR',10,anchor='end',mono=True)
+    text(608,536,'SIGNALS',9,p['muted'],mono=True)
+    text(862,536,f'{len(weeks)} WEEKS',10,anchor='end',mono=True)
+    text(608,556,'SOURCE',9,p['muted'],mono=True)
+    text(862,556,'PUBLIC GITHUB PROFILE',9,anchor='end',mono=True)
 
-    path('M35 505H865',width=.6)
-    txt(35,524,'Orbit: one week per segment · brighter = more contributions',10,p['muted'])
-    txt(865,524,f'PUBLIC DATA / {data["updated"]}',9,p['muted'],anchor='end',mono=True)
-    out.extend(['</g>', '</svg>'])
-    return '\n'.join(out) + '\n'
+    line('M20 590H880')
+    dot(25,606,2)
+    text(35,610,'Brighter orbit segments = more contributions that week.',10,p['muted'],mono=True)
+    text(880,610,'JJ / STARTIFICIAL',10,p['muted'],anchor='end',mono=True)
+    out.extend(['</g>','</svg>'])
+    return '\n'.join(out)+'\n'
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -196,7 +229,7 @@ def main():
         year, month = divmod(index, 12)
         key = f"{year}-{month+1:02d}"
         monthly.append({"month": key, "count": sum(d["count"] for d in days if d["date"].startswith(key))})
-    data = {"updated": today.isoformat(), "sources": [f"https://github.com/users/{OWNER}/contributions", f"https://api.github.com/users/{OWNER}/repos"], "methodology": "Counts come from the public profile contribution calendar and include any private contribution counts the profile publicly displays. No private repository names or contents are requested. Monthly bars show the last 12 calendar months; the current month is partial. Languages count GitHub's primary language per public non-fork repository, not bytes, proficiency, or time spent.", "calendar_start": days[0]["date"], "calendar_end": days[-1]["date"], "contributions_in_calendar": sum(d["count"] for d in days), "monthly_contributions": monthly, "public_repository_count": sum(not r.get("private", False) for r in repos), "non_fork_repository_count": len(owned), "primary_languages": dict(languages.most_common()), "without_detected_language": sum(not r["language"] for r in owned)}
+    data = {"updated": today.isoformat(), "sources": [f"https://github.com/users/{OWNER}/contributions", f"https://api.github.com/users/{OWNER}/repos"], "methodology": "Counts come from the public profile contribution calendar and include any private contribution counts the profile publicly displays. No private repository names or contents are requested. Monthly totals in this data cover the last 12 calendar months; the current month is partial. Languages count GitHub's primary language per public non-fork repository, not bytes, proficiency, or time spent.", "calendar_start": days[0]["date"], "calendar_end": days[-1]["date"], "contributions_in_calendar": sum(d["count"] for d in days), "monthly_contributions": monthly, "public_repository_count": sum(not r.get("private", False) for r in repos), "non_fork_repository_count": len(owned), "primary_languages": dict(languages.most_common()), "without_detected_language": sum(not r["language"] for r in owned)}
     from datetime import date, timedelta
     weekly = {}
     for day in days:
@@ -205,8 +238,8 @@ def main():
         key = sunday.isoformat()
         weekly[key] = weekly.get(key, 0) + day["count"]
     data["weekly_contributions"] = [{"start": key, "count": value} for key, value in sorted(weekly.items())]
-    data["methodology"] += " The work constellation links are thematic, not dependencies. Its activity orbit uses one segment per calendar week; segment brightness and thickness increase with the square root of that week's contribution count relative to the maximum week."
-    charts = {f"work-constellation-{theme}.svg": render(data, theme == "dark") for theme in ("light", "dark")}
+    data["methodology"] += " The work graph links indicate shared interests, not implementation dependencies. Its activity orbit uses one segment per calendar week; segment brightness and thickness increase with the square root of that week's contribution count relative to the maximum week."
+    charts = {"work-console.svg": render(data)}
     assets = ROOT / "assets"
     assets.mkdir(exist_ok=True)
     for name, svg in charts.items():
