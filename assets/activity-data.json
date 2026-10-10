@@ -1,0 +1,68 @@
+{
+  "updated": "2026-10-09",
+  "sources": [
+    "https://github.com/users/startificial/contributions",
+    "https://api.github.com/users/startificial/repos"
+  ],
+  "methodology": "Counts come from the public profile contribution calendar and include any private contribution counts the profile publicly displays. No private repository names or contents are requested. Monthly bars show the last 12 calendar months; the current month is partial. Languages count GitHub's primary language per public non-fork repository, not bytes, proficiency, or time spent.",
+  "calendar_start": "2025-10-05",
+  "calendar_end": "2026-10-09",
+  "contributions_in_calendar": 740,
+  "monthly_contributions": [
+    {
+      "month": "2025-11",
+      "count": 27
+    },
+    {
+      "month": "2025-12",
+      "count": 34
+    },
+    {
+      "month": "2026-01",
+      "count": 10
+    },
+    {
+      "month": "2026-02",
+      "count": 5
+    },
+    {
+      "month": "2026-03",
+      "count": 52
+    },
+    {
+      "month": "2026-04",
+      "count": 53
+    },
+    {
+      "month": "2026-05",
+      "count": 34
+    },
+    {
+      "month": "2026-06",
+      "count": 20
+    },
+    {
+      "month": "2026-07",
+      "count": 58
+    },
+    {
+      "month": "2026-08",
+      "count": 118
+    },
+    {
+      "month": "2026-09",
+      "count": 263
+    },
+    {
+      "month": "2026-10",
+      "count": 54
+    }
+  ],
+  "public_repository_count": 19,
+  "non_fork_repository_count": 13,
+  "primary_languages": {
+    "TypeScript": 5,
+    "Python": 4
+  },
+  "without_detected_language": 4
+}

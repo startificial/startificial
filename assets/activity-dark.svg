@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="365" viewBox="0 0 900 365" role="img" aria-labelledby="title desc">
+<title id="title">JJ — GitHub activity</title>
+<desc id="desc">Monthly profile contributions, including publicly displayed private contribution counts, and primary languages of public non-fork repositories.</desc>
+<rect x=".5" y=".5" width="899" height="364" rx="12" fill="#0d1117" stroke="#30363d"/>
+<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+<text x="28" y="35" font-size="12" fill="#9da7b3" font-weight="600" text-anchor="start">WORK, IN NUMBERS</text>
+<text x="872" y="35" font-size="12" fill="#9da7b3" font-weight="400" text-anchor="end">@startificial</text>
+<text x="28" y="79" font-size="30" fill="#e6edf3" font-weight="600" text-anchor="start">740</text>
+<text x="132" y="79" font-size="14" fill="#9da7b3" font-weight="400" text-anchor="start">contributions in the past year</text>
+<text x="600" y="79" font-size="30" fill="#e6edf3" font-weight="600" text-anchor="start">19</text>
+<text x="650" y="79" font-size="14" fill="#9da7b3" font-weight="400" text-anchor="start">public repositories</text>
+<path d="M28 103H872 M572 123V309" stroke="#30363d"/>
+<text x="28" y="137" font-size="11" fill="#9da7b3" font-weight="600" text-anchor="start">MONTHLY CONTRIBUTIONS</text>
+<text x="600" y="137" font-size="11" fill="#9da7b3" font-weight="600" text-anchor="start">PRIMARY REPOSITORY LANGUAGES</text>
+<rect x="32" y="264.71" width="26" height="11.29" rx="3" fill="#7c9cf5"><title>2025-11: 27 contributions</title></rect>
+<text x="45" y="257.70722433460077" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">27</text>
+<text x="45" y="296" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">Nov</text>
+<rect x="76" y="261.78" width="26" height="14.22" rx="3" fill="#7c9cf5"><title>2025-12: 34 contributions</title></rect>
+<text x="89" y="254.77946768060838" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">34</text>
+<text x="89" y="296" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">Dec</text>
+<rect x="120" y="271.82" width="26" height="4.18" rx="3" fill="#7c9cf5"><title>2026-01: 10 contributions</title></rect>
+<text x="133" y="264.8174904942966" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">10</text>
+<text x="133" y="296" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">Jan</text>
+<rect x="164" y="273.91" width="26" height="2.09" rx="3" fill="#7c9cf5"><title>2026-02: 5 contributions</title></rect>
+<text x="177" y="266.9087452471483" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">5</text>
+<text x="177" y="296" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">Feb</text>
+<rect x="208" y="254.25" width="26" height="21.75" rx="3" fill="#7c9cf5"><title>2026-03: 52 contributions</title></rect>
+<text x="221" y="247.2509505703422" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">52</text>
+<text x="221" y="296" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">Mar</text>
+<rect x="252" y="253.83" width="26" height="22.17" rx="3" fill="#7c9cf5"><title>2026-04: 53 contributions</title></rect>
+<text x="265" y="246.83269961977186" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">53</text>
+<text x="265" y="296" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">Apr</text>
+<rect x="296" y="261.78" width="26" height="14.22" rx="3" fill="#7c9cf5"><title>2026-05: 34 contributions</title></rect>
+<text x="309" y="254.77946768060838" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">34</text>
+<text x="309" y="296" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">May</text>
+<rect x="340" y="267.63" width="26" height="8.37" rx="3" fill="#7c9cf5"><title>2026-06: 20 contributions</title></rect>
+<text x="353" y="260.63498098859316" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">20</text>
+<text x="353" y="296" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">Jun</text>
+<rect x="384" y="251.74" width="26" height="24.26" rx="3" fill="#7c9cf5"><title>2026-07: 58 contributions</title></rect>
+<text x="397" y="244.74144486692015" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">58</text>
+<text x="397" y="296" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">Jul</text>
+<rect x="428" y="226.65" width="26" height="49.35" rx="3" fill="#7c9cf5"><title>2026-08: 118 contributions</title></rect>
+<text x="441" y="219.64638783269962" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">118</text>
+<text x="441" y="296" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">Aug</text>
+<rect x="472" y="166.00" width="26" height="110.00" rx="3" fill="#7c9cf5"><title>2026-09: 263 contributions</title></rect>
+<text x="485" y="159.0" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">263</text>
+<text x="485" y="296" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">Sep</text>
+<rect x="516" y="253.41" width="26" height="22.59" rx="3" fill="#70d6ba"><title>2026-10: 54 contributions</title></rect>
+<text x="529" y="246.41444866920153" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">54</text>
+<text x="529" y="296" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="middle">Oct</text>
+<text x="28" y="318" font-size="11" fill="#9da7b3" font-weight="400" text-anchor="start">2025-11 → 2026-10 · current month is partial</text>
+<text x="600" y="174" font-size="14" fill="#e6edf3" font-weight="500" text-anchor="start">TypeScript</text>
+<text x="872" y="174" font-size="12" fill="#9da7b3" font-weight="400" text-anchor="end">5 repos</text>
+<rect x="600" y="184" width="272" height="7" rx="3.5" fill="#21262d"/>
+<rect x="600" y="184" width="151.11" height="7" rx="3.5" fill="#7c9cf5"/>
+<text x="600" y="218" font-size="14" fill="#e6edf3" font-weight="500" text-anchor="start">Python</text>
+<text x="872" y="218" font-size="12" fill="#9da7b3" font-weight="400" text-anchor="end">4 repos</text>
+<rect x="600" y="228" width="272" height="7" rx="3.5" fill="#21262d"/>
+<rect x="600" y="228" width="120.89" height="7" rx="3.5" fill="#70d6ba"/>
+<text x="600" y="290" font-size="11" fill="#9da7b3" font-weight="400" text-anchor="start">Public, non-fork repositories only.</text>
+<text x="600" y="308" font-size="11" fill="#9da7b3" font-weight="400" text-anchor="start">4 have no detected primary language.</text>
+<text x="28" y="347" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="start">Source: public GitHub profile &amp; repository metadata</text>
+<text x="872" y="347" font-size="10" fill="#9da7b3" font-weight="400" text-anchor="end">Updated 2026-10-09</text>
+</g>
+</svg>
