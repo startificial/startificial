@@ -5,7 +5,7 @@
 <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
 <text x="28" y="35" font-size="12" fill="#59636e" font-weight="600" text-anchor="start">WORK, IN NUMBERS</text>
 <text x="872" y="35" font-size="12" fill="#59636e" font-weight="400" text-anchor="end">@startificial</text>
-<text x="28" y="79" font-size="30" fill="#1f2328" font-weight="600" text-anchor="start">740</text>
+<text x="28" y="79" font-size="30" fill="#1f2328" font-weight="600" text-anchor="start">741</text>
 <text x="132" y="79" font-size="14" fill="#59636e" font-weight="400" text-anchor="start">contributions in the past year</text>
 <text x="600" y="79" font-size="30" fill="#1f2328" font-weight="600" text-anchor="start">19</text>
 <text x="650" y="79" font-size="14" fill="#59636e" font-weight="400" text-anchor="start">public repositories</text>
@@ -45,20 +45,20 @@
 <rect x="472" y="166.00" width="26" height="110.00" rx="3" fill="#5273d0"><title>2026-09: 263 contributions</title></rect>
 <text x="485" y="159.0" font-size="10" fill="#59636e" font-weight="400" text-anchor="middle">263</text>
 <text x="485" y="296" font-size="10" fill="#59636e" font-weight="400" text-anchor="middle">Sep</text>
-<rect x="516" y="253.41" width="26" height="22.59" rx="3" fill="#23836d"><title>2026-10: 54 contributions</title></rect>
-<text x="529" y="246.41444866920153" font-size="10" fill="#59636e" font-weight="400" text-anchor="middle">54</text>
+<rect x="516" y="253.00" width="26" height="23.00" rx="3" fill="#23836d"><title>2026-10: 55 contributions</title></rect>
+<text x="529" y="245.99619771863118" font-size="10" fill="#59636e" font-weight="400" text-anchor="middle">55</text>
 <text x="529" y="296" font-size="10" fill="#59636e" font-weight="400" text-anchor="middle">Oct</text>
 <text x="28" y="318" font-size="11" fill="#59636e" font-weight="400" text-anchor="start">2025-11 → 2026-10 · current month is partial</text>
 <text x="600" y="174" font-size="14" fill="#1f2328" font-weight="500" text-anchor="start">TypeScript</text>
 <text x="872" y="174" font-size="12" fill="#59636e" font-weight="400" text-anchor="end">5 repos</text>
 <rect x="600" y="184" width="272" height="7" rx="3.5" fill="#f0f3f6"/>
-<rect x="600" y="184" width="151.11" height="7" rx="3.5" fill="#5273d0"/>
+<rect x="600" y="184" width="136.00" height="7" rx="3.5" fill="#5273d0"/>
 <text x="600" y="218" font-size="14" fill="#1f2328" font-weight="500" text-anchor="start">Python</text>
-<text x="872" y="218" font-size="12" fill="#59636e" font-weight="400" text-anchor="end">4 repos</text>
+<text x="872" y="218" font-size="12" fill="#59636e" font-weight="400" text-anchor="end">5 repos</text>
 <rect x="600" y="228" width="272" height="7" rx="3.5" fill="#f0f3f6"/>
-<rect x="600" y="228" width="120.89" height="7" rx="3.5" fill="#23836d"/>
+<rect x="600" y="228" width="136.00" height="7" rx="3.5" fill="#23836d"/>
 <text x="600" y="290" font-size="11" fill="#59636e" font-weight="400" text-anchor="start">Public, non-fork repositories only.</text>
-<text x="600" y="308" font-size="11" fill="#59636e" font-weight="400" text-anchor="start">4 have no detected primary language.</text>
+<text x="600" y="308" font-size="11" fill="#59636e" font-weight="400" text-anchor="start">3 have no detected primary language.</text>
 <text x="28" y="347" font-size="10" fill="#59636e" font-weight="400" text-anchor="start">Source: public GitHub profile &amp; repository metadata</text>
 <text x="872" y="347" font-size="10" fill="#59636e" font-weight="400" text-anchor="end">Updated 2026-10-09</text>
 </g>
