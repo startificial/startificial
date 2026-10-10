@@ -13,9 +13,9 @@ At **StackAI**, I work across AI workflow products and the engineering that make
 ### Work constellation
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-light.svg">
-  <img src="./assets/activity-light.svg" alt="A work constellation linking JJ to broad StackAI work, Open Voice, Volatile Memory, House Search, and Weather Agent. The surrounding orbit shows weekly contributions; brighter segments mean more activity." width="900">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/work-constellation-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/work-constellation-light.svg">
+  <img src="./assets/work-constellation-light.svg" alt="A work constellation linking JJ to broad StackAI work, Open Voice, Volatile Memory, House Search, and Weather Agent. The surrounding orbit shows weekly contributions; brighter segments mean more activity." width="900">
 </picture>
 
 <sub>One orbit, a year of building. Each segment is a week; brighter segments mean more contributions. [How to read it](./assets/activity-data.json) · [Refresh](https://github.com/startificial/startificial/actions/workflows/refresh-profile.yml)</sub>

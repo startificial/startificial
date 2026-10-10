@@ -206,7 +206,7 @@ def main():
         weekly[key] = weekly.get(key, 0) + day["count"]
     data["weekly_contributions"] = [{"start": key, "count": value} for key, value in sorted(weekly.items())]
     data["methodology"] += " The work constellation links are thematic, not dependencies. Its activity orbit uses one segment per calendar week; segment brightness and thickness increase with the square root of that week's contribution count relative to the maximum week."
-    charts = {f"activity-{theme}.svg": render(data, theme == "dark") for theme in ("light", "dark")}
+    charts = {f"work-constellation-{theme}.svg": render(data, theme == "dark") for theme in ("light", "dark")}
     assets = ROOT / "assets"
     assets.mkdir(exist_ok=True)
     for name, svg in charts.items():
