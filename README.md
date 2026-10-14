@@ -2,7 +2,7 @@
 
 building at [StackAI](https://www.stackai.com/).
 
-interested in agent swarms, their interfaces, and tools for working towards objectives. specifically, systems that can coordinate work, retain context, and adjust based on results over longer runs.
+interested in agent swarms, their interfaces, and tooling for coordinating agents towards shared objectives. love to work on systems that can coordinate work, retain context over long tasks, and adjust based on results over longer runs.
 
 spending a lot of time thinking about how to operate these systems: setting objectives, inspecting what agents are doing, and redirecting them without managing every step.
 
