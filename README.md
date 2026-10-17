@@ -2,11 +2,9 @@
 
 building at [StackAI](https://www.stackai.com/).
 
-interested in agent swarms, their interfaces, and tooling for coordinating agents towards shared objectives. love to work on systems that can coordinate work, retain context over long tasks, and adjust based on results over longer runs.
+interested in agent swarms + identity and access mgmt for agentic platforms
 
-spending a lot of time thinking about how to operate these systems: setting objectives, inspecting what agents are doing, and redirecting them without managing every step.
-
-also into data engineering, ML, and developer tools.
+spending a lot of time thinking about how to operate these systems: setting objectives, inspecting what agents are doing + auditing actions + steering access at scale, and redirecting them without managing every step.
 
 if you're working on similar problems, i'd like to see what you're building.
 
